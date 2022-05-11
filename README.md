@@ -7,3 +7,7 @@ I store here some scripts I used to write for just fun *(and practice of course)
 Right now I'm practicing using Git and GitHub, so you're able to read this message as a result.
 
 ###### And trying to use **Markdown** a bit.
+
+Quote of the day:
+> I'll definitely write my next CV using Markdown, but not the Google Docs or something
+> ~ Me
