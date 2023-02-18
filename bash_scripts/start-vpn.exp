@@ -1,0 +1,22 @@
+#!/usr/bin/expect -f
+# Script requires the expect interpreter
+
+set username "Username"
+set password "Password"
+
+# Start the OpenVPN3 session with the specified configuration file
+spawn openvpn3 session-start --config /path/to/configuration/file
+
+# Expect the "Auth User Name:" prompt and input the username
+expect "Auth User name:"
+send "$username\r"
+
+# Expect the "Auth Password:" prompt and input the password
+expect "Auth Password:"
+send "$password\r"
+
+# Wait for the session to start
+expect "Connected"
+
+# Keep the script running until the session is terminated
+interacts
