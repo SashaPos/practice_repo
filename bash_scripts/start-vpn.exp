@@ -19,4 +19,4 @@ send "$password\r"
 expect "Connected"
 
 # Keep the script running until the session is terminated
-interacts
+interact
